@@ -26,16 +26,15 @@ MongoClient.connect('mongodb://127.0.0.1:27017/TodoApp',(err,db)=>{
     // });
 
 
-    db.collection('Users').find({name:'Claker'}).toArray().then(
-        (result)=>{
-            console.log(JSON.stringify(result,undefined,2));
-        },
+    // db.collection('Users').find({name:'Claker'}).toArray().then(
+    //     (result)=>{
+    //         console.log(JSON.stringify(result,undefined,2));
+    //     },
          
-        (err)=>{
-            console.log('Sorry, error getting data',err);
-        }
-    );
-
+    //     (err)=>{
+    //         console.log('Sorry, error getting data',err);
+    //     }
+    // );
 
 
 
