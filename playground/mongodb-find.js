@@ -30,7 +30,7 @@ MongoClient.connect('mongodb://127.0.0.1:27017/TodoApp',(err,db)=>{
         (result)=>{
             console.log(JSON.stringify(result,undefined,2));
         },
-        
+         
         (err)=>{
             console.log('Sorry, error getting data',err);
         }
